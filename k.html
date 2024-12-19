@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF=8" />
+    <meta name="viewport" counect="width =device-width" initial-scale="1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #010110;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        color: aliceblue;
+      }
+      .content {
+        background-color: rgb(0, 0, 0);
+        width: 400px;
+        height: 450px;
+        padding: 60px 40px;
+        border-top-left-radius: 70px;
+        border-top-right-radius: 70px;
+        border-bottom-left-radius: 200px;
+        border-bottom-right-radius: 200px;
+        border: 5px solid #ff00ae;
+        position: relative;
+      }
+      .time {
+        background-color: rgb(255, 255, 255);
+        color: rgb(49, 126, 126);
+        border-radius: 15px;
+      }
+      .time #counter {
+        text-align: end;
+        padding-right: 20px;
+        font-size: 50px;
+        border: 4px solid rgb(159, 99, 196);
+        border-radius: 15px;
+      }
+      .display {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 20px;
+        padding: 0 10px;
+        font-size: 20px;
+        font-weight: 900;
+      }
+      .display h5 {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        padding: relative;
+        font-size: 20px;
+        font-weight: 900;
+      }
+      .Click {
+        position: relative;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+      }
+      .hh2 {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        height: 30px;
+        width: 30px;
+        border: none;
+        cursor: pointer;
+        border-radius: 50%;
+        border: 3px solid #ff00ae;
+        background-color: #ff00ae;
+      }
+
+      .hh1 {
+        background-color: #ff00ae;
+        box-shadow: 0 0 120px rgb(253, 31, 206);
+        position: absolute;
+        top: 50px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      .hh1:active,
+      .hh2:active {
+        background-color: #010110;
+      }
+
+      button {
+        margin: 5px;
+        background-color: transparent;
+        color: rgb(129, 93, 48);
+        outline: none;
+        padding: 10px;
+        border-radius: 20px;
+        cursor: pointer;
+        border: 3px solid #ff00ae;
+        font-size: 20px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-weight: 900;
+        transition: 0.2s;
+      }
+      button:hover {
+        background-color: #ff00ae;
+      }
+
+      .groub-btn {
+        flex-wrap: wrap;
+        position: relative;
+        top: 30px;
+        padding: 0 30px;
+        margin-top: 50px;
+        justify-content: center;
+        display: flex;
+      }
+      #demo {
+        position: absolute;
+        font-size: 15px;
+        color: #ff00ae;
+        /* background-color: #010110; */
+        top: 30px;
+        width: 100%;
+        left: 50%;
+        transform: translate(-50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="group-btn">
+      <button id="btnclick0">باسم الله</button>
+      <button id="btnclick1">الحمدلله</button>
+      <button id="btnclick2">الله وأكبر</button>
+      <button id="btnclick3">سبحان الله</button>
+      <button id="btnclick4">لاإله الا الله</button>
+      <button id="btnclick5">سبحان الله بحمده سبحان الله العظيم</button>
+      <button id="btnclick6">لاحول ولا قوة الا بلله</button>
+      <button id="btnclick7">سبحان الله والحمدلله</button>
+      <button id="btnclick8">استغفر الله</button>
+    </div>
+    <div class="container">
+      <div class="content">
+        <h2 id="demo"></h2>
+        <div class="time" id="time">
+          <h1 id="counter">0</h1>
+        </div>
+        <div class="display">
+          <h5>Count</h5>
+          <h5>Reset</h5>
+        </div>
+        <div class="Click">
+          <input type="button" class="hh1" id="click" />
+          <input type="button" class="hh2" id="return" />
+        </div>
+      </div>
+    </div>
+    <script src="n.js"></script>
+  </body>
+</html>
